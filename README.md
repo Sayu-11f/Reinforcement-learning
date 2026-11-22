@@ -146,7 +146,7 @@ Trains a fresh model for 50,000 steps, then renders it playing.
 | `Other_scripts/watch_model.py` | — | Model visualization |
 
 ## Conclusion
-## Research Findings
+**Research Findings**
 
 The experiments demonstrate that curriculum fine-tuning using pretrained PPO models can improve robustness under simulated environmental disturbances. By building upon an existing model with established flight-control capabilities, subsequent training can focus on adapting to increasingly complex conditions.
 
