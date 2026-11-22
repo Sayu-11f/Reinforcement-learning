@@ -1,4 +1,4 @@
-# Reinforcement Learning: Robust Lunar Lander with Curriculum Learning
+# Evaluating Reinforcement Learning Robustness Under Environmental Uncertainties
 
 This project trains PPO (Proximal Policy Optimization) agents on the `LunarLander-v3` environment using reward shaping and curriculum learning to improve robustness against dynamic environmental uncertainties such as sensor noise, engine failures, wind, and observation discretization.
 
