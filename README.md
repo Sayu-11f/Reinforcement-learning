@@ -19,7 +19,7 @@ rl_project/
 ├── robust_lunar_lander_curriculum.zip# Trained curriculum v1 model
 ├── robust_lunar_lander_curriculum2.zip# Trained curriculum v2 model
 ├── desktop.ini                       # Windows system file (not project-related)
-├── Evaluating Reinforcement Learning Robustness Under Dynamic Environmental Uncertainties_ A Curriculum Fine-Tuning Approach (1).pdf  # Reference paper
+├── Evaluating Reinforcement Learning Robustness Under Environmental Uncertainties.pdf  
 ├── __pycache__/                      # Python bytecode cache (auto-generated)
 ├── rl_env/                           # Virtual environment
 ├── Graphs/                           # Generated comparison graphs (PNG/JPG)
