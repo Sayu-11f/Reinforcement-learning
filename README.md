@@ -144,3 +144,14 @@ Trains a fresh model for 50,000 steps, then renders it playing.
 | `Other_scripts/Break_agent.py` | 50k | Reward-hacked agent (ablation) |
 | `Other_scripts/train_and_watch.py` | 50k | Quick train + render demo |
 | `Other_scripts/watch_model.py` | — | Model visualization |
+
+## Conclusion
+## Research Findings
+
+The experiments demonstrate that curriculum fine-tuning using pretrained PPO models can improve robustness under simulated environmental disturbances. By building upon an existing model with established flight-control capabilities, subsequent training can focus on adapting to increasingly complex conditions.
+
+Across the six evaluation environments, **Curriculum V1 outperformed the baseline agent in all six tests**, demonstrating the most consistent overall performance. Curriculum V2 achieved the highest success rate in the Full Adaptive Chaos environment (6%), compared with 2% for Curriculum V1 and 0% for the baseline.
+
+An important finding was that increased training duration did not necessarily produce better overall performance. Despite receiving approximately 1.5 million training steps, Curriculum V2 was outperformed by Curriculum V1 in four of the six environments, despite Curriculum V1 receiving only 300,000 steps. However, Curriculum V2 achieved stronger performance in the most challenging environment and recorded the highest evaluation reward among the three models.
+
+These results suggest that progressively challenging training environments and pretrained models are promising approaches to improving RL robustness. However, the unequal training budgets and use of single training seeds limit the strength of these conclusions. Further experiments with controlled training budgets and multiple random seeds are needed to evaluate the generalisability of the findings.
